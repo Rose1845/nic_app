@@ -1,16 +1,16 @@
 import React from 'react'
+import {FaApple,FaAnchor} from 'react-icons/fa'
 import people from '../data'
 
 export default function Services() {
     return (
       <div flex flex-col>
-        
         <h1 className='text-3xl pt-5 font-bold text-center'>Our Services</h1>
         <div className='flex'>
         <div>
        
         <figure class="bg-slate-100 rounded-xl p-8 dark:bg-slate-800">
-        {/* <FontAwesomeIcon icon="fa-sharp fa-solid fa-network-wired" /> */}
+        <FaApple/>
           <div class="pt-6 t space-y-4">
           <blockquote>
            <p class="text-center text-lg font-medium">
@@ -30,7 +30,7 @@ export default function Services() {
         </div>
         <div>
         <figure class="bg-slate-100 rounded-xl p-8 dark:bg-slate-800">
-        {/* <FontAwesomeIcon icon="fa-solid fa-code-merge" /> */}
+        <FaAnchor/>
           <div class="pt-6 t space-y-4">
           <blockquote>
            <p class="text-center text-lg font-medium">
@@ -50,7 +50,7 @@ export default function Services() {
         </div>
         <div>
         <figure class="bg-slate-100 rounded-xl p-8 dark:bg-slate-800">
-        {/* <FontAwesomeIcon icon="fa-sharp fa-solid fa-microchip" /> */}
+        <FaApple/>
           <div class="pt-6 t space-y-4">
           <blockquote>
            <p class="text-center text-lg font-medium">
@@ -93,6 +93,6 @@ export default function Services() {
         </div>
       
       </div>
-      </div>
+    </div>
     )
   }
