@@ -11,7 +11,7 @@ import { useDispatch } from 'react-redux'
 const Header = () => {
   const dispatch = useDispatch()
 
-  const [showModal,setSHowMOdal]= useState(false)
+  const [menuOpen,setMenuOpen]= useState(false)
 
   return (
     <div className='flex bg-gray-400 '>
@@ -19,7 +19,7 @@ const Header = () => {
         <div>
         <h1 className='font-bold text-2xl'>NIC.</h1>
         </div>
-       <div className='md:none flex justify-between items-center'>
+       <div className='md:none flex justify-around  md:flex flex-grow items-center" id="example-navbar-warning'>
        <Link to={'/'}className="font-bold text-white">Home</Link>
        <Link to={'/about'}className="font-bold text-white hover:text-gray-600">About</Link>
        <Link to={'/services'}className="font-bold text-white hover:text-gray-600">Services</Link>
@@ -28,21 +28,14 @@ const Header = () => {
        <div>
        <FaUser/>
        </div>
-       <button
-        className="bg-blue-200 text-black active:bg-blue-500 
-      font-bold px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1"
-        type="button"
-        onClick={() => dispatch({loginUser})}
-      >
-       Login
-      </button>
+
        <div className=" "onClick={(e)=>{
         e.preventDefault();
-        setSHowMOdal(!showModal)
+        setMenuOpen(!menuOpen)
        }
       }>
         {/* {showModal && <UserModal/>} */}
-        {showModal ? (
+        {menuOpen ? (
         <>
           <div className="flex justify-center items-center overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
             <div className="relative w-auto my-6 mx-auto max-w-3xl">
@@ -87,7 +80,7 @@ const Header = () => {
                   <button
                     className="text-red-500 background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1"
                     type="button"
-                    onClick={() => setShowModal(false)}
+                    onClick={() => setMenuOpen(false)}
                   >
                     Close
                   </button>
