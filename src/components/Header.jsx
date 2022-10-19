@@ -1,12 +1,15 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { FaUser ,FaBars} from 'react-icons/fa'
+import { loginUser } from '../state/slices/authSlice'
+import { useDispatch } from 'react-redux'
 // import UserModal from './UserModal'
 // import Modal from './Modal'
 
 
 
 const Header = () => {
+  const dispatch = useDispatch()
 
   const [showModal,setSHowMOdal]= useState(false)
 
@@ -25,6 +28,14 @@ const Header = () => {
        <div>
        <FaUser/>
        </div>
+       <button
+        className="bg-blue-200 text-black active:bg-blue-500 
+      font-bold px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1"
+        type="button"
+        onClick={() => dispatch({loginUser})}
+      >
+       Login
+      </button>
        <div className=" "onClick={(e)=>{
         e.preventDefault();
         setSHowMOdal(!showModal)
