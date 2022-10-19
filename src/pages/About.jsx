@@ -1,4 +1,5 @@
 import React from 'react'
+import { FaFacebook, FaInstagram, FaLinkedinIn, FaTwitter } from 'react-icons/fa'
 
 const About = () => {
   return (
@@ -15,7 +16,17 @@ const About = () => {
   </span>
   <br />
   <a href='/contact'>Contact Us</a>
-   
+  <div className='flex justify-around items-center'>
+    <a href="http://twitter.com/nyaugenya001">
+      <FaTwitter/>
+    </a>
+    <a href="https://rwww.linkedin.com/in/ose-atieno-odhiambo-5038b420a">
+      <FaLinkedinIn/>
+    </a>
+    <a href="https://">
+      <FaFacebook/>
+    </a>  
+  </div>
 </blockquote>
         </div>
       </div>
