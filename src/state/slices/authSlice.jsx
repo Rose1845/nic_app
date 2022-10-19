@@ -11,10 +11,12 @@ const authSlice = createSlice({
             state.user=action.payload
 
         },
-        logourUser:(state,action)=>{
+        logoutUser:(state,action)=>{
             state.isLoggedIn=false,
             state.user=initialState.user
         }
 
     }
 })
+export const {loginUser,logoutUser}=action.reducers
+export default authSlice
