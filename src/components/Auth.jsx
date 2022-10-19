@@ -27,7 +27,7 @@ const Auth =() =>{
                     <input type="password"className="shadow appearance-none border rounded w-full py-2 px-1 text-black" />
                   </form>
                 </div>
-                <div className="flex items-center justify-end p-6 border-t border-solid border-blueGray-200 rounded-b">
+                <div className="flex items-center justify-center p-6 border-t border-solid border-blueGray-200 rounded-b">
                   
                   <button
                     className="text-white bg-yellow-500 active:bg-yellow-700 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1"
