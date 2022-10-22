@@ -2,8 +2,8 @@ import React from 'react'
 
 const Home = () => {
   return (
-    <div className='flex flex-col pt-6 '>
-      <div className='flex pt-6'>
+    <div className='flex flex-col pt-6 md:flex md:flex-col '>
+      <div className='flex pt-6 bg-no-repeat bg-cover style={{backgroundImage:url("https://media.istockphoto.com/photos/anonymous-people-avatars-in-virtual-space-picture-id1367515302?b=1&k=20&m=1367515302&s=170667a&w=0&h=HuEzA7NhyU503Xm8gPrQAYAnQYP_VgtoFMyY-cM1KEs=)"}}"'>
       <div className='flex justify-center items-center flex-col pt-4'>
       <h1 className='text-center text-2xl p-5'>NIC Consultancy Firm</h1>
       <p className='text-center text-black p-5'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br/>Delectus, dignissimos ipsa perspiciatis minima magnam eveniet dolorum sunt aliquid adipisci, <br/>nihil eaque quos illo eligendi qui, tempora nobis alias sequi. Veritatis?</p>
@@ -12,7 +12,7 @@ const Home = () => {
       </button>
       </div>
       <div className='ml-4 pt-4'>
-        <img className='w-30 h-30'src="https://media.istockphoto.com/photos/anonymous-people-avatars-in-virtual-space-picture-id1367515302?b=1&k=20&m=1367515302&s=170667a&w=0&h=HuEzA7NhyU503Xm8gPrQAYAnQYP_VgtoFMyY-cM1KEs=" alt="" />
+        <img  className='w-30 h-30'src="https://media.istockphoto.com/photos/anonymous-people-avatars-in-virtual-space-picture-id1367515302?b=1&k=20&m=1367515302&s=170667a&w=0&h=HuEzA7NhyU503Xm8gPrQAYAnQYP_VgtoFMyY-cM1KEs=" alt="" />
       </div>
       </div>
       <div className='mt-12 bg-white dark:bg-slate-900 rounded-lg px-6 py-8 ring-1 ring-slate-900/5 shadow-xl'>

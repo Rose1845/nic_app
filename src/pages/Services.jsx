@@ -1,6 +1,7 @@
 import React from 'react'
 import {FaApple,FaAnchor} from 'react-icons/fa'
 import people from '../data'
+import { motion } from 'framer-motion'
 
 export default function Services() {
     return (
@@ -89,9 +90,7 @@ export default function Services() {
           </li>
         ))}
       </ul>
-     
         </div>
-      
       </div>
     </div>
     )

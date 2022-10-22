@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { FaUser ,FaBars} from 'react-icons/fa'
+import { Popover } from '@headlessui/react'
+import Auth from './Auth'
 import { loginUser } from '../state/slices/authSlice'
 import { useDispatch } from 'react-redux'
 // import UserModal from './UserModal'
@@ -26,9 +28,26 @@ const Header = () => {
        <Link to={'/contact'}className="font-bold text-white hover:text-gray-600">Contact</Link>
        </div>
        <div>
-       <FaUser/>
-       </div>
+      
+           <Popover className='fixed'>
+            {({open})=>(
+              <>
+              <Popover.Button>
+              <FaUser/>
+              </Popover.Button>
+              <Popover.Panel className='w-45 h-45 shadow z-{-20}'>
+                <div className='flex bottom-1/2 flex-col '>
+                <Link to={'/login'}>Login</Link>
+                <Link to={'/logout'}>logout</Link>
+                <Link to={'/'}>sign up</Link>
+                </div>
+              </Popover.Panel>
+            
+              </>
+            )}
 
+           </Popover>
+       </div>
        <div className=" "onClick={(e)=>{
         e.preventDefault();
         setMenuOpen(!menuOpen)
