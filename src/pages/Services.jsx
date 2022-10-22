@@ -5,8 +5,11 @@ import { motion } from 'framer-motion'
 
 export default function Services() {
     return (
-      <div flex flex-col>
+      <motion.div animate={{ x: 0 }} >
+        <div flex flex-col>
+        <motion.h1 animate={{fontSize:50,color:'#ff2994',x:100,y:-20}}>
         <h1 className='text-3xl pt-5 font-bold text-center'>Our Services</h1>
+        </motion.h1>
         <div className='flex'>
         <div>
        
@@ -77,7 +80,9 @@ export default function Services() {
         <div className='flex flex-row bg-white dark:bg-slate-900 rounded-lg px-6 py-8 ring-1 ring-slate-900/5 shadow-xl'>
         <ul className="flex divide-x divide-gray-200">
         {people.map((person) => (
-          <li key={person.email} className="py-4 flex">
+          <motion.li animate={{ x: 100 }}
+          transition={{ delay: 1 }}>
+            <li key={person.email} className="py-4 flex">
             <img className="h-10 w-10 rounded-full" src={person.image} alt="" />
             <div className="ml-3">
               <p className="text-sm font-medium text-gray-900">{person.name}</p>
@@ -88,10 +93,12 @@ export default function Services() {
               </blockquote>
             </div>
           </li>
+          </motion.li>
         ))}
       </ul>
         </div>
       </div>
     </div>
+      </motion.div>
     )
   }

@@ -16,7 +16,7 @@ const Header = () => {
   const [menuOpen,setMenuOpen]= useState(false)
 
   return (
-    <div className='flex bg-gray-400 '>
+    <div className='ffixed overflow-hidden lex bg-gray-400 '>
       <nav className='max-w-7xl mx-auto w-full flex justify-between items-center p-5'>
         <div>
         <h1 className='font-bold text-2xl'>NIC.</h1>
