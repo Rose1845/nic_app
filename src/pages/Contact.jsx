@@ -1,11 +1,14 @@
 import React from 'react'
+import { motion } from 'framer-motion';
 import { FaFacebook, FaLinkedinIn, FaTwitter } from 'react-icons/fa'
 
 const Contact = () => {
   return (
   <div className='flex  flex-col justify-around items-center'>
     <div className="flex items-center justify-between p-5 border-b border-solid border-gray-300 rounded ">
+      <motion.h3 animate={{fontSize:50,color:'#ff2994',x:100,y:-20}}>
       <h3 className="text-3xl text-center font-semibold">Contact us</h3>
+      </motion.h3>
     </div>
     <div className='flex'>
     <div className='pt-1 flex flex-col justify-center items-center'>
@@ -15,7 +18,6 @@ const Contact = () => {
       <FaLinkedinIn/>
     </div>
   <div>
-    
     <div className="relative p-6 flex-auto">
         <form className="bg-gray-200 shadow-md rounded px-8 pt-6 pb-8 ">
           <label className="block text-black text-sm font-bold mb-1">

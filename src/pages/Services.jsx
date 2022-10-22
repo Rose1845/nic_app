@@ -6,13 +6,12 @@ import { motion } from 'framer-motion'
 export default function Services() {
     return (
       <motion.div animate={{ x: 0 }} >
-        <div flex flex-col>
+        <div className='overflow-hidden flex flex-col' >
         <motion.h1 animate={{fontSize:50,color:'#ff2994',x:100,y:-20}}>
         <h1 className='text-3xl pt-5 font-bold text-center'>Our Services</h1>
         </motion.h1>
         <div className='flex'>
         <div>
-       
         <figure class="bg-slate-100 rounded-xl p-8 dark:bg-slate-800">
         <FaApple/>
           <div class="pt-6 t space-y-4">
@@ -80,7 +79,9 @@ export default function Services() {
         <div className='flex flex-row bg-white dark:bg-slate-900 rounded-lg px-6 py-8 ring-1 ring-slate-900/5 shadow-xl'>
         <ul className="flex divide-x divide-gray-200">
         {people.map((person) => (
-          <motion.li animate={{ x: 100 }}
+          <motion.li whileHOver={{
+            scale:2
+          }}animate={{ x:60 }}
           transition={{ delay: 1 }}>
             <li key={person.email} className="py-4 flex">
             <img className="h-10 w-10 rounded-full" src={person.image} alt="" />
