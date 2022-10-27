@@ -16,7 +16,7 @@ const About = () => {
           <blockquote class="pt-6 text-2xl font-semibold italic text-center text-slate-900">
             Want to know more {""}
   <span class="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-blue-500 relative inline-block">
-    <span class="relative text-white"> about us?</span>
+    <span class="relative text-white"> About us?</span>
   </span>
   <br />
   <a href='/contact'>Contact Us</a>

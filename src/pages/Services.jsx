@@ -11,6 +11,7 @@ export default function Services() {
         <h1 className='text-3xl pt-5 font-bold text-center'>Our Services</h1>
         </motion.h1>
         <div className='flex'>
+          
         <div>
         <figure class="bg-slate-100 rounded-xl p-8 dark:bg-slate-800">
         <FaApple/>

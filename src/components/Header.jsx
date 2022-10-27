@@ -21,7 +21,7 @@ const Header = () => {
         <div>
         <h1 className='font-bold text-2xl'>NIC.</h1>
         </div>
-       <div className='md:none flex justify-around  md:flex flex-grow items-center" id="example-navbar-warning'>
+       <div className=' flex justify-around   flex-grow items-center" id="example-navbar-warning '>
        <Link to={'/'}className="font-bold text-white">Home</Link>
        <Link to={'/about'}className="font-bold text-white hover:text-gray-600">About</Link>
        <Link to={'/services'}className="font-bold text-white hover:text-gray-600">Services</Link>
@@ -29,14 +29,14 @@ const Header = () => {
        </div>
        <div>
       
-           <Popover className='fixed'>
+           <Popover >
             {({open})=>(
               <>
               <Popover.Button>
               <FaUser/>
               </Popover.Button>
-              <Popover.Panel className='w-45 h-45 shadow z-{-20}'>
-                <div className='flex bottom-1/2 flex-col '>
+              <Popover.Panel className='pt-7 w-45 h-45 shadow z-100'>
+                <div className='flex  flex-col '>
                 <Link to={'/login'}>Login</Link>
                 <Link to={'/logout'}>logout</Link>
                 <Link to={'/'}>sign up</Link>
@@ -56,10 +56,10 @@ const Header = () => {
         {/* {showModal && <UserModal/>} */}
         {menuOpen ? (
         <>
-          <div className="flex justify-center items-center overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
+          <div className="flex justify-center items-center ">
             <div className="relative w-auto my-6 mx-auto max-w-3xl">
               <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
-                <div className="flex items-start justify-between p-5 border-b border-solid border-gray-300 rounded-t ">
+                <div className="flex items-start justify-between p-5 border-b border-solid border-gray-300  ">
                   <button
                     className="bg-transparent border-0 text-black float-right"
                     onClick={() => setShowModal(false)}
@@ -109,7 +109,7 @@ const Header = () => {
           </div>
         </>
       ) : null}
-      <FaBars className='hidden'/>
+      <FaBars className='md:hidden'/>
        </div>
       </nav>
       
