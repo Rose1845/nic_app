@@ -7,6 +7,11 @@ module.exports = {
     './src/**/*.js',
   ],
   theme: {
+    screens:{
+      md:'768px',
+      
+
+    },
     extend: {},
   },
   plugins: [],

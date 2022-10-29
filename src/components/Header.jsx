@@ -21,7 +21,7 @@ const Header = () => {
         <div>
         <h1 className='font-bold text-2xl'>NIC.</h1>
         </div>
-       <div className=' flex justify-around   flex-grow items-center" id="example-navbar-warning '>
+       <div className=' flex justify-around   flex-grow items-center" id="example-navbar-warning md:hidden '>
        <Link to={'/'}className="font-bold text-white">Home</Link>
        <Link to={'/about'}className="font-bold text-white hover:text-gray-600">About</Link>
        <Link to={'/services'}className="font-bold text-white hover:text-gray-600">Services</Link>
