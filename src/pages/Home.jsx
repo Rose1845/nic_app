@@ -1,14 +1,20 @@
 import React from 'react'
+import { useState } from 'react'
 
 const Home = () => {
+const [readMore,setReadMore]=useState(false)
+  const content = <div>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br/>Delectus, dignissimos ipsa perspiciatis minima magnam eveniet dolorum sunt aliquid adipisci, <br/>nihil eaque quos illo eligendi qui, tempora nobis alias sequi. Veritatis?</p>
+  </div>
   return (
     <div className='flex flex-col pt-6 md:flex md:flex-col '>
       <div className='flex pt-6 bg-no-repeat bg-cover style={{backgroundImage:url("https://media.istockphoto.com/photos/anonymous-people-avatars-in-virtual-space-picture-id1367515302?b=1&k=20&m=1367515302&s=170667a&w=0&h=HuEzA7NhyU503Xm8gPrQAYAnQYP_VgtoFMyY-cM1KEs=)"}}"'>
       <div className='flex justify-center items-center flex-col pt-4'>
       <h1 className='text-center text-2xl p-5'>NIC Consultancy Firm</h1>
       <p className='text-center text-black p-5'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br/>Delectus, dignissimos ipsa perspiciatis minima magnam eveniet dolorum sunt aliquid adipisci, <br/>nihil eaque quos illo eligendi qui, tempora nobis alias sequi. Veritatis?</p>
-      <button class="rounded p-4 transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 ...">
-       Read More
+      {readMore && content}
+      <button onClick={()=>setReadMore(!readMore)}class="rounded p-4 transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 ...">
+       {readMore ? 'READ LESS': 'READ MORE'}
       </button>
       </div>
       <div className='ml-4 pt-4'>
