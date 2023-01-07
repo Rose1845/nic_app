@@ -11,7 +11,6 @@ export default function Services() {
         <h1 className='text-3xl pt-5 font-bold text-center'>Our Services</h1>
         </motion.h1>
         <div className='flex'>
-          
         <div>
         <figure class="bg-slate-100 rounded-xl p-8 dark:bg-slate-800">
         <FaApple/>
@@ -63,7 +62,7 @@ export default function Services() {
            </blockquote>
          <figcaption class="font-medium">
             <div class="text-sky-500 dark:text-sky-400">
-              Software Engineering
+              Cloud Computing
              </div>
               <div class="text-slate-700 dark:text-slate-500">
               Nyayo Stadium, Nairobi
@@ -72,7 +71,6 @@ export default function Services() {
          </div>
         </figure>
         </div>
-          
           
         </div>
         <div className='flex flex-col justify-center items-center'>

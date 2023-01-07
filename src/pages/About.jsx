@@ -18,7 +18,7 @@ const About = () => {
   <span class="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-blue-500 relative inline-block">
     <span class="relative text-white"> About us?</span>
   </span>
-  <br />
+  <br/>
   <a href='/contact'>Contact Us</a>
   <div className='flex justify-around items-center'>
     <a href="http://twitter.com/nyaugenya001">

@@ -9,6 +9,7 @@ import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import Layout from "./components/Layout";
 import Auth from "./components/Auth";
 import { useSelector } from "react-redux";
+import Courses from "./pages/Courses";
 
 function App() {
   const isLoggedIn=useSelector(state=>state.auth.isLoggedIn);
@@ -23,6 +24,7 @@ function App() {
           <Route path="/about"element={<About/>}/>        
           <Route path="/services"element={<Services/>}/>
           <Route path="/contact"element={<Contact/>}/>
+          <Route path="/courses"element={<Courses/>}/>
           
         </Routes>
         </Layout>}
